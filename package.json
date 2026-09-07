@@ -1,0 +1,11 @@
+{
+  "name": "smartfarm-crop-dashboard",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "test": "npm --prefix backend test && npm --prefix frontend test -- --run",
+    "build": "npm --prefix frontend run build"
+  },
+  "devDependencies": { "concurrently": "^9.2.1" }
+}
